@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/vladyslavfiii-resume-react/static/css/main.7560dc1e.css",
+    "main.css": "/vladyslavfiii-resume-react/static/css/main.79323b80.css",
     "main.js": "/vladyslavfiii-resume-react/static/js/main.35a574e5.js",
     "static/media/my-photo.png": "/vladyslavfiii-resume-react/static/media/my-photo.2b62f486aa81d1cec49f.png",
     "static/media/mockup-3.png": "/vladyslavfiii-resume-react/static/media/mockup-3.f5c328b174985e6b5af6.png",
@@ -13,11 +13,11 @@
     "static/media/art-5.png": "/vladyslavfiii-resume-react/static/media/art-5.333a62befaf59e4324c5.png",
     "static/media/art-6.png": "/vladyslavfiii-resume-react/static/media/art-6.4db61f227beabd204aa8.png",
     "index.html": "/vladyslavfiii-resume-react/index.html",
-    "main.7560dc1e.css.map": "/vladyslavfiii-resume-react/static/css/main.7560dc1e.css.map",
+    "main.79323b80.css.map": "/vladyslavfiii-resume-react/static/css/main.79323b80.css.map",
     "main.35a574e5.js.map": "/vladyslavfiii-resume-react/static/js/main.35a574e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.7560dc1e.css",
+    "static/css/main.79323b80.css",
     "static/js/main.35a574e5.js"
   ]
 }
