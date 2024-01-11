@@ -111,21 +111,28 @@ img{
 }
 .portfolio{
   width: 100%;
-  height: 100vh;
+  height: 100%;
 
   background: $dark;
   
   font-family: Noto Sans KR, sans-serif;
   font-weight: 400;
 
+  padding-block: 50px;
   .content{
     width: 100%;
     flex-direction: column;
     color: $white;
   }
   .portfolio-button-section{
-    padding-block: 25px;
+    padding-block: 0px;
     gap: 25px;
+  }
+  .counter{
+    margin-bottom: 50px;
+  }
+  .counter span{
+    color: $red;
   }
   .active-section{
     color: $red;
@@ -147,11 +154,16 @@ img{
     flex-direction: row;
   }
   .mockup-container{
-    width: 33%;
+    width: 47%;
     display: flex;
     flex-direction: column;
   }
   .mockup-container p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     padding-block: 5px;
     margin: 0;
     text-transform: capitalize;
@@ -162,11 +174,16 @@ img{
   .mockup{
     width: 100%;
     // width: min(33%, 100%);
+    transition: .3s;
+  }
+  .mockup:hover{
+    transform: scale(1.25);
+    transition: .3s;
   }
   .tag-section{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
 
     gap: 10px;
