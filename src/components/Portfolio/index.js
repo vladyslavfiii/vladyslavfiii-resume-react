@@ -6,6 +6,7 @@ import {Collapse} from 'react-collapse';
 import mockup1 from '../img/mockup-1.png';
 import mockup2 from '../img/mockup-2.png';
 import mockup3 from '../img/mockup-3.png';
+import mockup4 from '../img/mockup-4.png';
 
 import art1 from '../img/art-1.png';
 import art2 from '../img/art-2.png';
@@ -47,8 +48,8 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio d-flex flex-row justify-content-center align-items-center">
-      <div className="container d-flex flex-row justify-content-center align-items-center">
-        <div className="content d-flex justify-content-center align-items-center">
+      <div className="container d-flex flex-row justify-content-center align-items-center" id='portfolio'>
+        <div className="content d-flex justify-content-center align-items-center" >
           <div className="portfolio-button-section d-flex flex-row justify-content-center align-items-center">
             <h1 className={webActiveSection} onClick={setWebSection}>Website</h1>
             <h1 className={artActiveSection} onClick={setArtSection}>Art</h1>
@@ -62,35 +63,63 @@ export default function Portfolio() {
 
                 <div className="mockup-section d-flex justify-content-between">
                   <div className="mockup-container web-count">
-                    <p>landing for a music band</p>
                     <img className="mockup" src={mockup1} />
+                    <p>landing for a music band</p>
                     <div className="tag-section">
                       <p>html</p>
                       <p>css</p>
                       <p>javascript</p>
                       <p>bootstrap</p>
                     </div>
+                    <div className='links-section'>
+                      <span className="link"><a href="https://github.com/vladyslavfiii/landing-for-a-music-band" target="_blank"><i className="bi bi-github"></i></a></span>
+                      <span className="link"><a href="https://github.com/vladyslavfiii/landing-for-a-music-band" target="_blank"><i class="bi bi-globe"></i></a></span>
+                    </div>
                   </div>
                   <div className="mockup-container web-count">
-                    <p>landing for a public organisation</p>
                     <img className="mockup" src={mockup2} />
+                    <p>landing for a public organisation</p>
                     <div className="tag-section">
                       <p>html</p>
                       <p>css</p>
                       <p>javascript</p>
                       <p>bootstrap</p>
+                    </div>
+                    <div className='links-section'>
+                      <span className="link"><a href="https://github.com/vladyslavfiii/po-mpc-myrotvorets" target="_blank"><i className="bi bi-github"></i></a></span>
+                      <span className="link"><a href="https://mpcmyrotvorets.github.io/" target="_blank"><i class="bi bi-globe"></i></a></span>
                     </div>
                   </div>
                 </div>
+
                 <div className="mockup-section d-flex justify-content-between ">
                   <div className="mockup-container web-count">
-                    <p>landing for a burning man festival</p>
                     <img className="mockup" src={mockup3} />
+                    <p>landing for a burning man festival</p>
                     <div className="tag-section">
                       <p>html</p>
                       <p>css</p>
                       <p>javascript</p>
                       <p>bootstrap</p>
+                    </div>
+                    <div className='links-section'>
+                      <span className="link"><a href="https://github.com/vladyslavfiii/burning-man-landing-tt-1.1" target="_blank"><i className="bi bi-github"></i></a></span>
+                      <span className="link"><a href="https://vladyslavfiii.github.io/" target="_blank"><i class="bi bi-globe"></i></a></span>
+                    </div>
+                  </div>
+                  <div className="mockup-container web-count">
+                    <img className="mockup" src={mockup4} />
+                    <p>landing for a lamps seller</p>
+                    <div className="tag-section">
+                      <p>html</p>
+                      <p>css</p>
+                      <p>javascript</p>
+                      <p>bootstrap</p>
+                      <p>react</p>
+                    </div>
+                    <div className='links-section'>
+                      <span className="link"><a href="https://github.com/vladyslavfiii/burning-man-landing-tt-1.1" target="_blank"><i className="bi bi-github"></i></a></span>
+                      <span className="link"><a href="https://vladyslavfiii.github.io/" target="_blank"><i class="bi bi-globe"></i></a></span>
                     </div>
                   </div>
                 </div>

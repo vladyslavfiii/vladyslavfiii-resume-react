@@ -24,7 +24,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="down"><i className="bi bi-chevron-double-down"></i></div>
+      <div className="down"><a href="#portfolio"><i className="bi bi-chevron-double-down"></i></a></div>
     </div>
   );
 }
