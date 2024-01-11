@@ -135,7 +135,10 @@ img{
     color: $red;
   }
   .active-section{
-    color: $red;
+    color: $white;
+    background-color: $red;
+    border-radius: 6px;
+    padding-inline: 25px;
   }
   .inactive-section{
     color: $white;
