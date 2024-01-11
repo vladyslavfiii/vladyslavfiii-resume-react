@@ -1,7 +1,7 @@
 {
   "name": "resume-react",
   "version": "0.1.0",
-  "homepage": "https://vladyslavfiii.github.io/landing-for-a-music-band",
+  "homepage": "https://vladyslavfiii.github.io/vladyslavfiii-resume-react",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
