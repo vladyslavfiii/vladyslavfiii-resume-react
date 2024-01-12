@@ -7,6 +7,7 @@ import mockup1 from '../img/mockup-1.png';
 import mockup2 from '../img/mockup-2.png';
 import mockup3 from '../img/mockup-3.png';
 import mockup4 from '../img/mockup-4.png';
+import mockup5 from '../img/mockup-5.png';
 
 import art1 from '../img/art-1.png';
 import art2 from '../img/art-2.png';
@@ -64,7 +65,7 @@ export default function Portfolio() {
                 <div className="mockup-section d-flex justify-content-between">
                   <div className="mockup-container web-count">
                     <img className="mockup" src={mockup1} />
-                    <p>landing for a music band</p>
+                    <p>[example] landing for a music band</p>
                     <div className="tag-section">
                       <p>html</p>
                       <p>css</p>
@@ -78,7 +79,7 @@ export default function Portfolio() {
                   </div>
                   <div className="mockup-container web-count">
                     <img className="mockup" src={mockup2} />
-                    <p>landing for a public organisation</p>
+                    <p>[example] landing for a public organisation</p>
                     <div className="tag-section">
                       <p>html</p>
                       <p>css</p>
@@ -95,7 +96,7 @@ export default function Portfolio() {
                 <div className="mockup-section d-flex justify-content-between ">
                   <div className="mockup-container web-count">
                     <img className="mockup" src={mockup3} />
-                    <p>landing for a burning man festival</p>
+                    <p>[example] landing for a burning man festival</p>
                     <div className="tag-section">
                       <p>html</p>
                       <p>css</p>
@@ -109,7 +110,7 @@ export default function Portfolio() {
                   </div>
                   <div className="mockup-container web-count">
                     <img className="mockup" src={mockup4} />
-                    <p>landing for a lamps seller</p>
+                    <p>[example] landing for a lamps seller</p>
                     <div className="tag-section">
                       <p>html</p>
                       <p>css</p>
@@ -123,6 +124,26 @@ export default function Portfolio() {
                     </div>
                   </div>
                 </div>
+
+                <div className="mockup-section d-flex justify-content-between ">
+                  <div className="mockup-container web-count">
+                    <img className="mockup" src={mockup5} />
+                    <p>[example] landing for myself</p>
+                    <div className="tag-section">
+                      <p>html</p>
+                      <p>css</p>
+                      <p>javascript</p>
+                      <p>bootstrap</p>
+                      <p>react</p>
+                    </div>
+                    <div className='links-section'>
+                      <span className="link"><a href="https://github.com/vladyslavfiii/vladyslavfiii-resume-react" target="_blank"><i className="bi bi-github"></i></a></span>
+                      <span className="link"><a href="https://vladyslavfiii.github.io/vladyslavfiii-resume-react/" target="_blank"><i class="bi bi-globe"></i></a></span>
+                    </div>
+                  </div>
+                  
+                </div>
+
 
               </div>
             </Collapse>

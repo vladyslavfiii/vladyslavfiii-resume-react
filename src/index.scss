@@ -137,9 +137,18 @@ img{
   .active-section{
     color: $white;
     background-color: $red;
-    border-radius: 6px;
     padding-inline: 25px;
+    border-radius: 6px;
+
   }
+  // .active-section::after{
+  //   content: '';
+  //   display: block;
+  //   width: 100%;
+  //   height: 2px;
+
+  //   background-color: $red;
+  // }
   .inactive-section{
     color: $white;
   }
@@ -311,12 +320,18 @@ img{
   }
 
 }
- 
-
 @media (max-width: 576px) {
 
 }
 
+@media (max-width: 275px) {
+  .header .my-photo{
+    width: 200px;
+    border-radius: 24px;
+    filter: grayscale(1);
+    transition: .3s;
+  }
+}
 
 @keyframes downAnimation {
   0%{
