@@ -324,15 +324,21 @@ img{
   .portfolio .art-section{
     gap: 50px;
   }
+  .portfolio .website-section{
+    gap: 25px;
+  }
   .portfolio .mockup-section{
     flex-direction: column;
     align-items: center;
+    gap: 25px;
+    margin: 0px;
   }
   .portfolio .art-section .mockup-section{
     gap: 50px;
   }
   .portfolio .mockup-container{
-    width: 100%;
+    width: 75%;
+    gap: 25px;
   }
 }
 
