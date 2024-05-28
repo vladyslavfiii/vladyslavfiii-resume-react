@@ -72,6 +72,7 @@ img{
   .link-section{
     font-size: 32px;
     gap: 25px;
+
   }
   .link{
     transition: .3s;
@@ -114,7 +115,8 @@ img{
   height: 100%;
 
   background: $dark;
-  
+  background-image: url('./components/img/dot.png');
+
   font-family: Noto Sans KR, sans-serif;
   font-weight: 400;
 
@@ -125,11 +127,37 @@ img{
     color: $white;
   }
   .portfolio-button-section{
-    padding-block: 0px;
+    padding: 10px 25px;
     gap: 25px;
+    // border: 1px solid $white;
+  }
+  .portfolio-button-table-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    // border: 1px solid $white;
+    th{
+      width: 125px;
+      height: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      border: 1px solid $white;
+      transition: 0.5s;
+    }
+    th:hover{
+      background-color: $red;
+      transition: 0.5s;
+    }
   }
   .counter{
-    margin-bottom: 50px;
+    margin: 5px 0px;
+    font-size: 25px;
   }
   .counter span{
     color: $red;
@@ -137,8 +165,8 @@ img{
   .active-section{
     color: $white;
     background-color: $red;
-    padding-inline: 25px;
-    border-radius: 6px;
+    // border: 0px;
+    // border-radius: 6px;
 
   }
   // .active-section::after{
@@ -151,36 +179,68 @@ img{
   // }
   .inactive-section{
     color: $white;
+    border: 0px;
+    background: none;
   }
   .portfolio-section{
     width: 100%;
   }
   .website-section{
     gap: 10px;
+    margin-top: 50px;
   }
   .art-section{
     gap: 50px;
+    margin-top: 50px;
   }
   .mockup-section{
     width: 100%;
+    
     flex-direction: row;
     margin-bottom: 50px;
   }
+  .art {
+    max-width: 50%;
+  }
   .mockup-container{
-    width: 47%;
+    width: 45%;
+    background-color: $dark;
+    border: 1px solid $white;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
     display: flex;
     flex-direction: column;
-  }
-  .mockup-container p{
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-
-    padding-block: 5px;
-    margin: 0;
-    text-transform: capitalize;
+    transition: .3s;
+  }
+  .mockup-container:hover{
+    transition: .3s;
+    transform: translate(-10px, -10px);
+    .mockup{
+      transform: scale(1.25);
+    }
+  }
+  .info-section{
+    width: 100%;
+    background-color: $white;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    transition: .3s;
+    p{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  
+      margin: 0;
+      margin-top: 15px;
+      padding-block: 10px;
+      text-transform: capitalize;
+      font-size: 20px;
+      color: $dark;
+    }
   }
   .mockup-container span{
     color: $red;
@@ -219,9 +279,8 @@ img{
     align-items: center;
 
     gap:25px;
-    margin-top: 25px;
-
     font-size: 32px;
+    margin-bottom: 15px;
   }
   .link{
     transition: .3s;
@@ -231,11 +290,11 @@ img{
     transition: .3s;
   }
   a:link {
-    color: $red;
+    color: $dark;
     text-decoration: none;
   }
   a:visited {
-    color: $red;
+    color: $dark;
     text-decoration: none;
   }
   a:hover {
@@ -243,7 +302,7 @@ img{
     text-decoration: underline;
   }
   a:active {
-    color: $red;
+    color: $dark;
     text-decoration: underline;
   }
 }
@@ -350,33 +409,23 @@ img{
 
 @keyframes myPhotoAnimation {
   0%{
+    border-radius: 50%;
     border-top-right-radius: 24px;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-top-left-radius: 50%;
   }
   25%{
-    border-top-right-radius: 50%;
+    border-radius: 50%;
     border-bottom-right-radius: 24px;
-    border-bottom-left-radius: 50%;
-    border-top-left-radius: 50%;
   }
   50%{
-    border-top-right-radius:50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 24px;
-    border-top-left-radius: 50%;
-  }
-  75%{
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
+    border-radius: 50%;
     border-top-left-radius: 24px;
   }
+  75%{
+    border-radius: 50%;
+    border-bottom-left-radius: 24px;
+  }
   100%{
+    border-radius: 50%;
     border-top-right-radius: 24px;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-top-left-radius: 50%;
   }
 }

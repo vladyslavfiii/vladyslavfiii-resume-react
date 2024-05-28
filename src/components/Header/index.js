@@ -11,9 +11,9 @@ export default function Header() {
       <div className="container d-flex flex-row justify-content-center align-items-center">
         <div className="content d-flex justify-content-center align-items-center">
           <div>
-            <h1 className="title">Hi, im <span>Vladyslav</span></h1>
+            <h1 className="title">Hi, i'm <span>Vladyslav</span></h1>
             <h3><span>front-end</span> developer</h3>
-            <h6 className="skills">html, css, js, react, bootstrap, sass</h6>
+            {/* <h6 className="skills">html, css, js, react, bootstrap, sass</h6> */}
             <div className="link-section d-flex flex-row">
               <span className="link"><a href="https://github.com/vladyslavfiii" target="_blank"><i className="bi bi-github"></i></a></span>
               <span className="link"><a href="https://t.me/vladyslavfiii" target="_blank"><i className="bi bi-telegram"></i></a></span>

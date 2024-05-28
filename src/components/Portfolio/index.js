@@ -15,6 +15,10 @@ import art3 from '../img/art-3.png';
 import art4 from '../img/art-4.png';
 import art5 from '../img/art-5.png';
 import art6 from '../img/art-6.png';
+import art7 from '../img/art-7.png';
+import art8 from '../img/art-8.png';
+import art9 from '../img/art-9.png';
+import art10 from '../img/art-10.png';
 
 export default function Portfolio() {
   const [webActiveSection, setWebActiveSection] = useState('active-section');
@@ -52,99 +56,84 @@ export default function Portfolio() {
       <div className="container d-flex flex-row justify-content-center align-items-center" id='portfolio'>
         <div className="content d-flex justify-content-center align-items-center" >
           <div className="portfolio-button-section d-flex flex-row justify-content-center align-items-center">
-            <h1 className={webActiveSection} onClick={setWebSection}>Website</h1>
-            <h1 className={artActiveSection} onClick={setArtSection}>Art</h1>
+            <tr className='portfolio-button-table-section'>
+              <th className={webActiveSection} onClick={setWebSection}>Web</th>
+              <th className={artActiveSection} onClick={setArtSection}>Art</th>
+            </tr>
+            {/* <button className={webActiveSection} onClick={setWebSection}><h3>Web</h3></button>
+            <button className={artActiveSection} onClick={setArtSection}><h3>Art</h3></button> */}
           </div>
-
-          <h3 className="counter">Total: <span>{currentSectionChildCout}</span></h3> 
+          <p className="counter">Total: <span>{currentSectionChildCout}</span></p> 
 
           <div className="portfolio-section">
             <Collapse isOpened={showWebsite} className="website-collapse">
               <div className="website-section d-flex flex-column">
 
-                <div className="mockup-section d-flex justify-content-between">
+                <div className="mockup-section d-flex justify-content-around">
                   <div className="mockup-container web-count">
                     <img className="mockup" src={mockup1} />
-                    <p>[example] landing for a music band</p>
-                    <div className="tag-section">
-                      <p>html</p>
-                      <p>css</p>
-                      <p>javascript</p>
-                      <p>bootstrap</p>
-                    </div>
-                    <div className='links-section'>
-                      <span className="link"><a href="https://github.com/vladyslavfiii/landing-for-a-music-band" target="_blank"><i className="bi bi-github"></i></a></span>
-                      <span className="link"><a href="https://github.com/vladyslavfiii/landing-for-a-music-band" target="_blank"><i class="bi bi-globe"></i></a></span>
-                    </div>
+                    <div className='info-section'>
+                      <p>Music Band Website</p>
+                      <div className='links-section'>
+                        <span className="link"><a href="https://github.com/vladyslavfiii/landing-for-a-music-band" target="_blank"><i className="bi bi-github"></i></a></span>
+                        <span className="link"><a href="https://github.com/vladyslavfiii/landing-for-a-music-band" target="_blank"><i class="bi bi-globe"></i></a></span>
+                      </div>
+                      </div>
                   </div>
+                  
                   <div className="mockup-container web-count">
                     <img className="mockup" src={mockup2} />
-                    <p>[example] landing for a public organisation</p>
-                    <div className="tag-section">
-                      <p>html</p>
-                      <p>css</p>
-                      <p>javascript</p>
-                      <p>bootstrap</p>
-                    </div>
-                    <div className='links-section'>
-                      <span className="link"><a href="https://github.com/vladyslavfiii/po-mpc-myrotvorets" target="_blank"><i className="bi bi-github"></i></a></span>
-                      <span className="link"><a href="https://mpcmyrotvorets.github.io/" target="_blank"><i class="bi bi-globe"></i></a></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mockup-section d-flex justify-content-between ">
-                  <div className="mockup-container web-count">
-                    <img className="mockup" src={mockup3} />
-                    <p>[example] landing for a burning man festival</p>
-                    <div className="tag-section">
-                      <p>html</p>
-                      <p>css</p>
-                      <p>javascript</p>
-                      <p>bootstrap</p>
-                    </div>
-                    <div className='links-section'>
-                      <span className="link"><a href="https://github.com/vladyslavfiii/burning-man-landing-tt-1.1" target="_blank"><i className="bi bi-github"></i></a></span>
-                      <span className="link"><a href="https://vladyslavfiii.github.io/" target="_blank"><i class="bi bi-globe"></i></a></span>
-                    </div>
-                  </div>
-                  <div className="mockup-container web-count">
-                    <img className="mockup" src={mockup4} />
-                    <p>[example] landing for a lamps seller</p>
-                    <div className="tag-section">
-                      <p>html</p>
-                      <p>css</p>
-                      <p>javascript</p>
-                      <p>bootstrap</p>
-                      <p>react</p>
-                    </div>
-                    <div className='links-section'>
-                      <span className="link"><a href="https://github.com/vladyslavfiii/lighter-react" target="_blank"><i className="bi bi-github"></i></a></span>
-                      <span className="link"><a href="https://vladyslavfiii.github.io/lighter-react/" target="_blank"><i class="bi bi-globe"></i></a></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mockup-section d-flex justify-content-between ">
-                  <div className="mockup-container web-count">
-                    <img className="mockup" src={mockup5} />
-                    <p>[example] landing for myself</p>
-                    <div className="tag-section">
-                      <p>html</p>
-                      <p>css</p>
-                      <p>javascript</p>
-                      <p>bootstrap</p>
-                      <p>react</p>
-                    </div>
-                    <div className='links-section'>
-                      <span className="link"><a href="https://github.com/vladyslavfiii/vladyslavfiii-resume-react" target="_blank"><i className="bi bi-github"></i></a></span>
-                      <span className="link"><a href="https://vladyslavfiii.github.io/vladyslavfiii-resume-react/" target="_blank"><i class="bi bi-globe"></i></a></span>
+                    <div className='info-section'>
+                      <p>Public Organisation "MYROTVORETS"</p>
+                      <div className='links-section'>
+                        <span className="link"><a href="https://github.com/vladyslavfiii/po-mpc-myrotvorets" target="_blank"><i className="bi bi-github"></i></a></span>
+                        <span className="link"><a href="https://mpcmyrotvorets.github.io/" target="_blank"><i class="bi bi-globe"></i></a></span>
+                      </div>
                     </div>
                   </div>
                   
                 </div>
 
+                <div className="mockup-section d-flex justify-content-around ">
 
+                  <div className="mockup-container web-count">
+                    <img className="mockup" src={mockup3} />
+                    <div className='info-section'>
+                      <p>burning man festival</p>
+                      <div className='links-section'>
+                        <span className="link"><a href="https://github.com/vladyslavfiii/burning-man-landing-tt-1.1" target="_blank"><i className="bi bi-github"></i></a></span>
+                        <span className="link"><a href="https://vladyslavfiii.github.io/" target="_blank"><i class="bi bi-globe"></i></a></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mockup-container web-count">
+                    <img className="mockup" src={mockup4} />
+                    <div className='info-section'>
+                    <p>landing for a lamps seller</p>
+                    <div className='links-section'>
+                      <span className="link"><a href="https://github.com/vladyslavfiii/lighter-react" target="_blank"><i className="bi bi-github"></i></a></span>
+                      <span className="link"><a href="https://vladyslavfiii.github.io/lighter-react/" target="_blank"><i class="bi bi-globe"></i></a></span>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
+                <div className="mockup-section d-flex justify-content-around">
+                  <div className="mockup-container web-count">
+                    <img className="mockup" src={mockup5} />
+                    <div className='info-section'>
+                    <p>myself page</p>
+                    <div className='links-section'>
+                      <span className="link"><a href="https://github.com/vladyslavfiii/vladyslavfiii-resume-react" target="_blank"><i className="bi bi-github"></i></a></span>
+                      <span className="link"><a href="https://vladyslavfiii.github.io/vladyslavfiii-resume-react/" target="_blank"><i class="bi bi-globe"></i></a></span>
+                    </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                
               </div>
             </Collapse>
  
@@ -155,11 +144,9 @@ export default function Portfolio() {
 
                   <div className="mockup-container art-count">
                     <img className="mockup" src={art1} />
-                    <p>logo for myself</p>
                   </div>
                   <div className="mockup-container art-count">
                     <img className="mockup" src={art2} />
-                    <p>logo for public organisation</p>
                   </div>
 
                 </div>
@@ -167,11 +154,9 @@ export default function Portfolio() {
 
                   <div className="mockup-container art-count">
                     <img className="mockup" src={art3} />
-                    <p>banner for public organisation</p>
                   </div>
                   <div className="mockup-container art-count">
                     <img className="mockup" src={art4} />
-                    <p>logo for example</p>
                   </div>
 
                 </div>
@@ -179,12 +164,31 @@ export default function Portfolio() {
 
                   <div className="mockup-container art-count">
                     <img className="mockup" src={art5} />
-                    <p>logo for example</p>
                   </div>
                   <div className="mockup-container art-count">
                     <img className="mockup" src={art6} />
-                    <p>logo for example</p>
                   </div>
+                
+                </div>
+                <div className="mockup-section d-flex justify-content-between">
+
+                  <div className="mockup-container art-count">
+                    <img className="mockup" src={art7} />
+                  </div>
+                  <div className="mockup-container art-count">
+                    <img className="mockup" src={art8} />
+                  </div>
+                
+                </div>
+                <div className="mockup-section d-flex justify-content-between">
+
+                  <div className="mockup-container art-count">
+                    <img className="mockup" src={art9} />
+                  </div>
+                  <div className="mockup-container art-count">
+                    <img className="mockup" src={art10} />
+                  </div>
+
                 
                 </div>
 
