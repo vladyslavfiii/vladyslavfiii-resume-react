@@ -9,5 +9,6 @@ root.render(
   <React.StrictMode>
     <Header />
     <Portfolio />
+    {/* <Footer /> */}
   </React.StrictMode>
 );

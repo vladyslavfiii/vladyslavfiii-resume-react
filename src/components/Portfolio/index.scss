@@ -1,0 +1,222 @@
+$white: #fff;
+$dark: #28282b;
+$dark-transparent: rgba(0, 0, 0, 0.25);
+$red: #d22b2b;
+
+.portfolio{
+  width: 100%;
+  height: 100%;
+  
+  background: $dark;
+  background-image: url('../img/dot.png');
+  
+  font-family: Noto Sans KR, sans-serif;
+  font-weight: 400;
+  
+  padding-block: 50px;
+
+    .content{
+      width: 100%;
+      flex-direction: column;
+      color: $white;
+    }
+    .section-title{
+      color: $white;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 18px;
+      margin-block: 50px;
+    }
+    .list{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  
+      margin-block: 25px;
+    }
+    .demonstration{
+      display: flex;
+  
+      background-color: $dark-transparent;
+      margin: 25px;
+      border-radius: 24px;
+      transition: .3s;
+      position: relative;
+    }
+    .demonstration:hover{
+      box-shadow: 0 0 5px $red; 
+      transition: .3s;
+      .description{
+        opacity: 1;
+      }
+      .mockup-web{
+        filter: blur(5px);
+        transition: .75s;
+      }
+    }
+    .description{
+      opacity: 0;
+      position: absolute;
+      z-index: 99;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      color: $white;
+      text-align: justify;
+      text-shadow: $dark 2px 2px;
+      background-color: $dark-transparent;
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+      padding: 50px;
+      transition: .5s;
+    }
+    .demonstration-web{
+      width: 450px;
+      height: 500px;
+  
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .info-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+  
+      margin-block: 25px;
+      padding-inline: 75px;
+      
+      color: $white;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    .links-section{
+      display: flex;
+      flex-direction: row;
+  
+      font-size: 32px;
+      gap: 25px;
+    }
+    .art-collapse-button{
+      width: 50px;
+      height: 50px;
+      background: none;
+      border: 0;
+      font-size: 24px;
+      font-weight: 900;
+      color: $red;
+      transition: .5s;
+    }
+    .art-collapse-button:hover{
+      transform: rotate(135deg);
+      transition: .5s;
+    }
+    .demonstration-art{
+      width: 350px;
+    }
+    .link{
+      transition: .5s;
+    }
+    .link:hover{
+      transform: scale(1.25);
+      transition: .3s;
+    }
+    a:link {
+      color: $white;
+      text-decoration: none;
+    }
+    a:visited {
+      color: $white;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $red;
+      text-decoration: underline;
+    }
+    a:active {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+  .container{
+    width: 1200px;
+  }
+  
+  @media (max-width: 1400px) {  }
+  
+  @media (max-width: 1200px) {  }
+  
+  @media (max-width: 992px) { 
+    .portfolio{
+      height: 100%;
+      padding-block: 25px;
+    }
+    .portfolio .demonstration{
+      margin: 10px;
+    }
+    .portfolio .demonstration-web{
+      width: 350px;
+      height: 400px;
+    }
+    .portfolio .info-section{
+      padding-inline: 50px;
+    } 
+  }
+  
+  @media (max-width: 768px) {
+    img{
+      width: 94%;
+    }
+    .header .my-photo{
+      width: 250px;
+      border-radius: 24px;
+      filter: grayscale(1);
+      transition: .3s;
+    }
+    .portfolio{
+      height:100%;
+      padding-block: 25px;
+    }
+    .container{
+      width: 94%;
+    } 
+    .content{
+      flex-direction: column;
+    }
+    .header .container :nth-child(1){
+      order: 2;
+    }
+    .header .container :nth-child(2){
+      order: 1;
+    }
+    .header .container .link-section :nth-child(1){
+      order: 1;
+    }
+    .header .container .link-section :nth-child(2){
+      order: 2;
+    }
+    .portfolio .demonstration-web{
+      width: 450px;
+      height: 500px;
+    }
+  }
+  @media (max-width: 576px) {
+    .portfolio .demonstration-web{
+      width: 300px;
+      height: 350px;
+    }
+    .portfolio .description{
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 275px) {
+    .header .my-photo{
+      width: 200px;
+      border-radius: 24px;
+      filter: grayscale(1);
+      transition: .3s;
+    }
+  }

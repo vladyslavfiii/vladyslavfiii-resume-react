@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../../index.scss';
+import '../Portfolio/index.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Collapse} from 'react-collapse';
 
@@ -17,187 +18,136 @@ import art5 from '../img/art-5.png';
 import art6 from '../img/art-6.png';
 import art7 from '../img/art-7.png';
 import art8 from '../img/art-8.png';
-import art9 from '../img/art-9.png';
-import art10 from '../img/art-10.png';
 
 export default function Portfolio() {
-  const [webActiveSection, setWebActiveSection] = useState('active-section');
-  const [artActiveSection, setArtActiveSection] = useState('inactive-section');
-  const [showWebsite, setShowWebsite] = useState(true);
   const [showArt, setShowArt] = useState(false);
-  const [currentSectionChildCout, setCurrentSectionChildCout] = useState('');
 
-  function setWebSection(el){
-    if (el.target.className !== 'active-section'){
-      setWebActiveSection('active-section');
-      setArtActiveSection('inactive-section');
-      setShowWebsite(true);
-      setShowArt(false);
-    } 
+  function setArtSection(){
+    (showArt === false ? setShowArt(true) : setShowArt(false));
   }
-
-  function setArtSection(el){
-    if (el.target.className !== 'active-section'){
-      setWebActiveSection('inactive-section');
-      setArtActiveSection('active-section');
-      setShowWebsite(false);
-      setShowArt(true);
-    } 
-  }
-
-  useEffect(() => {
-    let totalCount = 0;
-    (webActiveSection === 'active-section' ? totalCount = document.querySelectorAll('.web-count').length : totalCount = document.querySelectorAll('.art-count').length)
-    setCurrentSectionChildCout(totalCount);
-  })
 
   return (
-    <div className="portfolio d-flex flex-row justify-content-center align-items-center">
-      <div className="container d-flex flex-row justify-content-center align-items-center" id='portfolio'>
-        <div className="content d-flex justify-content-center align-items-center" >
-          <div className="portfolio-button-section d-flex flex-row justify-content-center align-items-center">
-            <tr className='portfolio-button-table-section'>
-              <th className={webActiveSection} onClick={setWebSection}>Web</th>
-              <th className={artActiveSection} onClick={setArtSection}>Art</th>
-            </tr>
-            {/* <button className={webActiveSection} onClick={setWebSection}><h3>Web</h3></button>
-            <button className={artActiveSection} onClick={setArtSection}><h3>Art</h3></button> */}
-          </div>
-          <p className="counter">Total: <span>{currentSectionChildCout}</span></p> 
+    <div className='portfolio'>
 
-          <div className="portfolio-section">
-            <Collapse isOpened={showWebsite} className="website-collapse">
-              <div className="website-section d-flex flex-column">
+    <p className='section-title'>web</p>
 
-                <div className="mockup-section d-flex justify-content-around">
-                  <div className="mockup-container web-count">
-                    <img className="mockup" src={mockup1} />
-                    <div className='info-section'>
-                      <p>Music Band Website</p>
-                      <div className='links-section'>
-                        <span className="link"><a href="https://github.com/vladyslavfiii/landing-for-a-music-band" target="_blank"><i className="bi bi-github"></i></a></span>
-                        <span className="link"><a href="https://github.com/vladyslavfiii/landing-for-a-music-band" target="_blank"><i class="bi bi-globe"></i></a></span>
-                      </div>
-                      </div>
-                  </div>
-                  
-                  <div className="mockup-container web-count">
-                    <img className="mockup" src={mockup2} />
-                    <div className='info-section'>
-                      <p>Public Organisation "MYROTVORETS"</p>
-                      <div className='links-section'>
-                        <span className="link"><a href="https://github.com/vladyslavfiii/po-mpc-myrotvorets" target="_blank"><i className="bi bi-github"></i></a></span>
-                        <span className="link"><a href="https://mpcmyrotvorets.github.io/" target="_blank"><i class="bi bi-globe"></i></a></span>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
+      <div className='list'>
 
-                <div className="mockup-section d-flex justify-content-around ">
-
-                  <div className="mockup-container web-count">
-                    <img className="mockup" src={mockup3} />
-                    <div className='info-section'>
-                      <p>burning man festival</p>
-                      <div className='links-section'>
-                        <span className="link"><a href="https://github.com/vladyslavfiii/burning-man-landing-tt-1.1" target="_blank"><i className="bi bi-github"></i></a></span>
-                        <span className="link"><a href="https://vladyslavfiii.github.io/" target="_blank"><i class="bi bi-globe"></i></a></span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="mockup-container web-count">
-                    <img className="mockup" src={mockup4} />
-                    <div className='info-section'>
-                    <p>landing for a lamps seller</p>
-                    <div className='links-section'>
-                      <span className="link"><a href="https://github.com/vladyslavfiii/lighter-react" target="_blank"><i className="bi bi-github"></i></a></span>
-                      <span className="link"><a href="https://vladyslavfiii.github.io/lighter-react/" target="_blank"><i class="bi bi-globe"></i></a></span>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-
-                <div className="mockup-section d-flex justify-content-around">
-                  <div className="mockup-container web-count">
-                    <img className="mockup" src={mockup5} />
-                    <div className='info-section'>
-                    <p>myself page</p>
-                    <div className='links-section'>
-                      <span className="link"><a href="https://github.com/vladyslavfiii/vladyslavfiii-resume-react" target="_blank"><i className="bi bi-github"></i></a></span>
-                      <span className="link"><a href="https://vladyslavfiii.github.io/vladyslavfiii-resume-react/" target="_blank"><i class="bi bi-globe"></i></a></span>
-                    </div>
-                    </div>
-                  </div>
-                  
-                </div>
-                
-                
+        <div className="demonstration demonstration-web">
+            <img className="mockup mockup-web" src={mockup1} />
+            <p className='description'>
+              Landing page for Public Organisation "MYROTVORETS"<br />
+              <br />In this project I am trying to gain new knowledge and skills in bootstrap.<br />
+              This is a non-commercial project and created for demonstration purposes.
+            </p>
+            <div className='info-section'>
+              <p>Public Organisation "MYROTVORETS"</p>
+              <div className='links-section'>
+                <span className="link"><a href="https://github.com/vladyslavfiii/po-mpc-myrotvorets" target="_blank"><i className="bi bi-github"></i></a></span>
+                <span className="link"><a href="https://mpcmyrotvorets.github.io/" target="_blank"><i class="bi bi-globe"></i></a></span>
               </div>
-            </Collapse>
- 
-            <Collapse isOpened={showArt} className="art-collapse">
-            <div className="art-section d-flex flex-column">
-
-                <div className="mockup-section d-flex justify-content-between">
-
-                  <div className="mockup-container art-count">
-                    <img className="mockup" src={art1} />
-                  </div>
-                  <div className="mockup-container art-count">
-                    <img className="mockup" src={art2} />
-                  </div>
-
-                </div>
-                <div className="mockup-section d-flex justify-content-between">
-
-                  <div className="mockup-container art-count">
-                    <img className="mockup" src={art3} />
-                  </div>
-                  <div className="mockup-container art-count">
-                    <img className="mockup" src={art4} />
-                  </div>
-
-                </div>
-                <div className="mockup-section d-flex justify-content-between">
-
-                  <div className="mockup-container art-count">
-                    <img className="mockup" src={art5} />
-                  </div>
-                  <div className="mockup-container art-count">
-                    <img className="mockup" src={art6} />
-                  </div>
-                
-                </div>
-                <div className="mockup-section d-flex justify-content-between">
-
-                  <div className="mockup-container art-count">
-                    <img className="mockup" src={art7} />
-                  </div>
-                  <div className="mockup-container art-count">
-                    <img className="mockup" src={art8} />
-                  </div>
-                
-                </div>
-                <div className="mockup-section d-flex justify-content-between">
-
-                  <div className="mockup-container art-count">
-                    <img className="mockup" src={art9} />
-                  </div>
-                  <div className="mockup-container art-count">
-                    <img className="mockup" src={art10} />
-                  </div>
-
-                
-                </div>
-
-              </div>
-            </Collapse> 
           </div>
-
         </div>
+
+        <div className="demonstration demonstration-web">
+            <img className="mockup mockup-web" src={mockup2} />
+            <p className='description'>
+              Landing page for Burning Man festifal.<br />
+              <br />It was a test task of knowledge and ability to use bootstrap and responsive design.<br />
+              This is a non-commercial project and created for demonstration purposes.
+            </p>
+            <div className='info-section'>
+              <p>Burning man festival</p>
+              <div className='links-section'>
+                <span className="link"><a href="https://github.com/vladyslavfiii/burning-man-landing-tt-1.1" target="_blank"><i className="bi bi-github"></i></a></span>
+                <span className="link"><a href="https://vladyslavfiii.github.io/" target="_blank"><i class="bi bi-globe"></i></a></span>
+              </div>
+          </div>
+        </div>
+
+        <div className="demonstration demonstration-web">
+            <img className="mockup mockup-web" src={mockup3} />
+            <p className='description'>
+              Landing page for my Portfolio.<br />
+              <br />In this project I used and experimented with React, bootstrap and scss.<br />
+              This is a non-commercial project and created for demonstration purposes.
+            </p>
+            <div className='info-section'>
+              <p>My Portfolio Page</p>
+              <div className='links-section'>
+                <span className="link"><a href="https://github.com/vladyslavfiii/vladyslavfiii-resume-react" target="_blank"><i className="bi bi-github"></i></a></span>
+                <span className="link"><a href="https://vladyslavfiii.github.io/vladyslavfiii-resume-react/" target="_blank"><i class="bi bi-globe"></i></a></span>
+              </div>
+          </div>
+        </div>
+
+        <div className="demonstration demonstration-web">
+            <img className="mockup mockup-web" src={mockup4} />
+            <p className='description'>
+              Landing page for Lamp Seller.<br />
+              <br />In this project I used and experimented with React.<br />
+              This is a non-commercial project and created for demonstration purposes.
+            </p>
+            <div className='info-section'>
+              <p>Lamp seller</p>
+              <div className='links-section'>
+                <span className="link"><a href="https://github.com/vladyslavfiii/lighter-react" target="_blank"><i className="bi bi-github"></i></a></span>
+                <span className="link"><a href="https://vladyslavfiii.github.io/lighter-react/" target="_blank"><i class="bi bi-globe"></i></a></span>
+              </div>
+          </div>
+        </div>
+
+        <div className="demonstration demonstration-web">
+            <img className="mockup mockup-web" src={mockup5} />
+            <p className='description'>
+              Landing page for my Favourite Musician.<br />
+              <br />In this project I used bootstrap and experimented with animation.<br />
+              This is a non-commercial project and created for demonstration purposes.
+            </p>
+            <div className='info-section'>
+              <p>music band website</p>
+              <div className='links-section'>
+                <span className="link"><a href="https://github.com/vladyslavfiii/landing-for-a-music-band" target="_blank"><i className="bi bi-github"></i></a></span>
+                <span className="link"><a href="https://github.com/vladyslavfiii/landing-for-a-music-band" target="_blank"><i class="bi bi-globe"></i></a></span>
+              </div>
+          </div>
+        </div>
+
       </div>
+
+    <p className='section-title'>art <button className='art-collapse art-collapse-button' onClick={setArtSection}>+</button></p>
+
+    <Collapse isOpened={showArt} className="art-collapse">
+      <div className='list'>
+
+        <div className="demonstration demonstration-art">
+          <img className="mockup" src={art1} />
+        </div>
+        <div className="demonstration demonstration-art">
+          <img className="mockup" src={art2} />
+        </div>
+        <div className="demonstration demonstration-art">
+          <img className="mockup" src={art3} />
+        </div>
+        <div className="demonstration demonstration-art">
+          <img className="mockup" src={art4} />
+        </div>
+        <div className="demonstration demonstration-art">
+          <img className="mockup" src={art5} />
+        </div>
+        <div className="demonstration demonstration-art">
+          <img className="mockup" src={art6} />
+        </div>
+        <div className="demonstration demonstration-art">
+          <img className="mockup" src={art7} />
+        </div>
+        <div className="demonstration demonstration-art">
+          <img className="mockup" src={art8} />
+        </div>
+
+      </div>
+    </Collapse>
+
     </div>
   );
 }
