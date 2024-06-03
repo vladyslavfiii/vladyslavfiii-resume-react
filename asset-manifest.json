@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/vladyslavfiii-resume-react/static/css/main.061d2d7b.css",
-    "main.js": "/vladyslavfiii-resume-react/static/js/main.5e9118cb.js",
+    "main.css": "/vladyslavfiii-resume-react/static/css/main.ccf2e52f.css",
+    "main.js": "/vladyslavfiii-resume-react/static/js/main.94d4a7cf.js",
     "static/media/mockup-3.png": "/vladyslavfiii-resume-react/static/media/mockup-3.09c3300a4bac79bcb2af.png",
     "static/media/my-photo.png": "/vladyslavfiii-resume-react/static/media/my-photo.2b62f486aa81d1cec49f.png",
     "static/media/mockup-2.png": "/vladyslavfiii-resume-react/static/media/mockup-2.f5c328b174985e6b5af6.png",
@@ -14,11 +14,11 @@
     "static/media/art-4.png": "/vladyslavfiii-resume-react/static/media/art-4.4d74bfd5178e12a61ac5.png",
     "static/media/art-8.png": "/vladyslavfiii-resume-react/static/media/art-8.333a62befaf59e4324c5.png",
     "index.html": "/vladyslavfiii-resume-react/index.html",
-    "main.061d2d7b.css.map": "/vladyslavfiii-resume-react/static/css/main.061d2d7b.css.map",
-    "main.5e9118cb.js.map": "/vladyslavfiii-resume-react/static/js/main.5e9118cb.js.map"
+    "main.ccf2e52f.css.map": "/vladyslavfiii-resume-react/static/css/main.ccf2e52f.css.map",
+    "main.94d4a7cf.js.map": "/vladyslavfiii-resume-react/static/js/main.94d4a7cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.061d2d7b.css",
-    "static/js/main.5e9118cb.js"
+    "static/css/main.ccf2e52f.css",
+    "static/js/main.94d4a7cf.js"
   ]
 }
