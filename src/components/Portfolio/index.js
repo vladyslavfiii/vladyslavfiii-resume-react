@@ -37,8 +37,8 @@ export default function Portfolio() {
             <img className="mockup mockup-web" src={mockup1} />
             <p className='description'>
               Landing page for Public Organisation "MYROTVORETS"<br />
-              <br />In this project I am trying to gain new knowledge and skills in bootstrap.<br />
-              This is a non-commercial project and created for demonstration purposes.
+              <br />In this project I am trying to gain new knowledge in bootstrap.<br />
+              Demonstration non-commercial project.
             </p>
             <div className='info-section'>
               <p>Public Organisation "MYROTVORETS"</p>
@@ -54,7 +54,7 @@ export default function Portfolio() {
             <p className='description'>
               Landing page for Burning Man festifal.<br />
               <br />It was a test task of knowledge and ability to use bootstrap and responsive design.<br />
-              This is a non-commercial project and created for demonstration purposes.
+              Demonstration non-commercial project.
             </p>
             <div className='info-section'>
               <p>Burning man festival</p>
@@ -70,7 +70,7 @@ export default function Portfolio() {
             <p className='description'>
               Landing page for my Portfolio.<br />
               <br />In this project I used and experimented with React, bootstrap and scss.<br />
-              This is a non-commercial project and created for demonstration purposes.
+              Demonstration non-commercial project.
             </p>
             <div className='info-section'>
               <p>My Portfolio Page</p>
@@ -86,7 +86,7 @@ export default function Portfolio() {
             <p className='description'>
               Landing page for Lamp Seller.<br />
               <br />In this project I used and experimented with React.<br />
-              This is a non-commercial project and created for demonstration purposes.
+              Demonstration non-commercial project.
             </p>
             <div className='info-section'>
               <p>Lamp seller</p>
@@ -102,7 +102,7 @@ export default function Portfolio() {
             <p className='description'>
               Landing page for my Favourite Musician.<br />
               <br />In this project I used bootstrap and experimented with animation.<br />
-              This is a non-commercial project and created for demonstration purposes.
+              Demonstration non-commercial project.
             </p>
             <div className='info-section'>
               <p>music band website</p>
